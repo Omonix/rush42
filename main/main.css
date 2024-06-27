@@ -24,4 +24,22 @@ a {
 .billLogo:hover {
   scale: 1.05;
 }
-      
+.cursorer {
+  border-left: solid 5px rgb(0, 255, 0);
+  animation: cursor 1s infinite linear;
+}
+.textSpawn {
+  padding-right: 0.2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes cursor {
+  0%,
+  100% {
+    border-left: none;
+  }
+  50% {
+    border-left: solid 5px rgb(0, 255, 0);
+  }
+}

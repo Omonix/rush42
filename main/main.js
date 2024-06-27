@@ -11,17 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
     "Look Bill Gates !",
     "Ok, bro",
     "Wazaaaaaaaaaaaaaaaaaaaaaaa !!!!!!!",
-    "Ce site est optimisé pour les dinosaures. Si vous en voyez un, faites-nous signe.",
-    "Bienvenue ! Nos cookies ne contiennent pas de chocolat, juste des pixels.",
+    "Bienvenue ! Nos cookies ne contiennent pas de chocolat, mais des pixels.",
     "Souriez, vous économisez une ride à chaque clic.",
     "Si vous lisez ceci, félicitations, vous savez lire !",
     "Ce site a été construit avec 0% de matières grasses.",
     "Nos articles sont 100% biodégradables. Lisez-les sans culpabilité.",
     "Bienvenue dans notre univers où les licornes font la livraison.",
-    "La procrastination est une forme d’art. Nous sommes tous des artistes ici.",
     "Le café de l'équipe est plus fort que votre connexion Internet.",
     "Cliquez ici si vous êtes curieux. Sinon, cliquez quand même.",
-    "On dit que l'argent ne fait pas le bonheur, mais il paye notre hébergement web.",
   ];
   let tabTitle = ["Magic CVs", "So cooool !"];
   let elonTitle = `

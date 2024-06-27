@@ -5,10 +5,10 @@
     z-index: -1;
 }
 .elonName {
-    font-size: 2.2vw;
+    font-size: 2.25vw;
 }
 .elonJob {
-    font-size: 1.8vw;
+    font-size: 1.95vw;
 }
 .firstPart {
     display: flex;
@@ -26,7 +26,7 @@
 .working {
     margin-left: 2%;
     margin-bottom: 1%;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 .nav {
     display: flex;
@@ -48,11 +48,16 @@
     background-color: rgb(0, 255, 0);
 }
 .spaceNav {
-    border-left: solid 3px rgb(0, 255, 0);
+    border-left: solid 0.1vh rgb(0, 255, 0);
     height: 100%;
 }
 .contact {
     margin-right: 2.5vw;
+}
+.transisPart {
+    height: 1vh;
+    margin-top: 2.5vh;
+    border-top: solid 0.1vh rgb(0, 255, 0);
 }
 
 @keyframes slide {

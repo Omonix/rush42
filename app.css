@@ -1,3 +1,4 @@
+/*min resolution 344x600*/
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   transition: all 600ms;
@@ -26,7 +27,7 @@ p {
 }
 .header {
   display: flex;
-  border-bottom: solid 3px rgb(0, 255, 0);
+  border-bottom: solid 0.25vh rgb(0, 255, 0);
   background-color: rgb(20, 20, 20);
   padding: 0 0 0 1.5%;
   position: fixed;
@@ -37,28 +38,10 @@ p {
   margin: 13% 0 0 2%;
 }
 .footer {
-  border-top: solid 3px rgb(0, 255, 0);
+  border-top: solid 0.25vh rgb(0, 255, 0);
 }
 .outputText {
   display: flex;
   align-items: center;
-}
-.textSpawn {
-  padding-right: 0.2%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.cursorer {
-  border-left: solid 5px rgb(0, 255, 0);
-  animation: cursor 1s infinite linear;
-}
-
-@keyframes cursor {
-  0%,
-  100% {
-    border-left: none;
-  }
-  50% {
-    border-left: solid 5px rgb(0, 255, 0);
-  }
+  font-size: 1.7vw;
 }
