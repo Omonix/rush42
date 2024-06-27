@@ -4,15 +4,18 @@
     filter: grayscale(80%);
     z-index: -1;
 }
-.elonText {
-    font-size: 2vw;
+.elonName {
+    font-size: 2.2vw;
+}
+.elonJob {
+    font-size: 1.8vw;
 }
 .firstPart {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.elonComponent {
+.firstElon {
     display: flex;
     flex-direction: column;
     width: 100%;

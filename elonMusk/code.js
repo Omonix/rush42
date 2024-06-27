@@ -1,24 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let elonText = document.querySelector(".textSpawn");
   let tabTitle = ["Elon Musk", "The G.O.A.T.", "Space X", "Gros cerveau"];
   let name = "Elon Reeve Musk";
+  let job = "Milliardaire Americain";
   let worker = [
     "- Entrepreneur",
     "- Ingenieur",
     "- Investisseur",
-    "- Homme d'affaire",
+    "- Fondateur (Neuralink, Zip2 Corporation, OpenAI, The Boring Company, Space X)",
     "- Programmeur",
-    "- Leader",
-  ];
-  let have = [
-    "Doctorat en physique energitique",
-    "Open ai",
-    "X",
-    "Tesla",
-    "Blastar",
-    "Paypal",
-    "Neuralink",
-    "Space X",
+    "- President (SolarCity, X)",
   ];
   let contact = ["X", "Facebook", "Instagram"];
 
@@ -40,8 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   setTimeout(() => {
-    ft_typewriter(elonText, name, 25);
+    ft_typewriter(document.querySelector(".elonName"), name, 25);
   }, 5000);
+  setTimeout(() => {
+    ft_typewriter(document.querySelector(".elonJob"), job, 25);
+  }, 6000);
   setTimeout(() => {
     ft_ul(document.querySelectorAll(".working"), worker);
   }, 7000);
