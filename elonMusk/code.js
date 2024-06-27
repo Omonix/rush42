@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   let elonText = document.querySelector(".textSpawn");
+  let tabTitle = ["Elon Musk", "The G.O.A.T.", "Space X", "Gros cerveau"];
   let name = "Elon Reeve Musk";
   let worker = [
     "- Entrepreneur",
@@ -7,12 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "- Investisseur",
     "- Homme d'affaire",
     "- Programmeur",
-  ];
-  let are = [
     "- Leader",
-    "- Visionnaire",
-    "- Objectifs audacieux",
-    "- Determination",
   ];
   let have = [
     "Doctorat en physique energitique",
@@ -49,7 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     ft_ul(document.querySelectorAll(".working"), worker);
   }, 7000);
-  setTimeout(() => {
-    ft_ul(document.querySelectorAll(".are"), are);
-  }, 9000);
+  setInterval(() => {
+    document.querySelector("title").innerHTML =
+      tabTitle[Math.floor(Math.random() * tabTitle.length)];
+  }, 5000);
 });

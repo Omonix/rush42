@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Cliquez ici si vous êtes curieux. Sinon, cliquez quand même.",
     "On dit que l'argent ne fait pas le bonheur, mais il paye notre hébergement web.",
   ];
+  let tabTitle = ["Magic CVs", "So cooool !"];
   let elonTitle = `
   ___________.__                     _____                __    
   \\_   _____/|  |   ____   ____     /     \\  __ __  _____|  | __
@@ -55,4 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 6000);
   ft_typewriter(document.querySelector(".elonLogo"), elonTitle, 6);
   ft_typewriter(document.querySelector(".billLogo"), billTitle, 6);
+  setInterval(() => {
+    document.querySelector("title").innerHTML =
+      tabTitle[Math.floor(Math.random() * tabTitle.length)];
+  }, 10000);
 });
