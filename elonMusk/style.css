@@ -1,0 +1,22 @@
+.elonFace {
+    width: 35%;
+}
+.firstPart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.elonComponent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.containAre,
+.containWorking {
+    margin-bottom: 2%;
+}
+.working,
+.are {
+    margin-left: 2%;
+    margin-bottom: 1%;
+}

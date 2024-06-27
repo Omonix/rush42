@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+*::selection {
+  background-color: rgb(0, 255, 0);
+  color: black;
+}
+body {
+  margin: 0.2% 0.75%;
+  color: rgb(0, 255, 0);
+  background-color: rgb(20, 20, 20);
+  font-family: "Ubuntu";
+}
+p {
+  letter-spacing: 0.075em;
+}
+.ft_logo {
+  font-size: 1vw;
+}
+.by {
+  text-align: right;
+  margin: 1%;
+}
+.header {
+  display: flex;
+  border-bottom: solid 3px rgb(0, 255, 0);
+  background-color: rgb(20, 20, 20);
+  padding: 0 0 0 1.5%;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+.main {
+  margin: 13% 0 0 2%;
+}
+.footer {
+  border-top: solid 3px rgb(0, 255, 0);
+}
+.outputText {
+  display: flex;
+  align-items: center;
+}
+.textSpawn {
+  word-break: break-all;
+  padding-right: 0.2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cursorer {
+  border-left: solid 5px rgb(0, 255, 0);
+  animation: cursor 1s infinite linear;
+}
+.nav {
+  margin-left: 7%;
+  display: flex;
+}
+.title {
+  border-radius: 20px;
+  margin-bottom: 1em;
+  color: rgb(0, 255, 0);
+  font-size: 0.65vw;
+  padding: 1vh;
+  background-color: rgb(20, 20, 20);
+}
+.title:hover {
+  color: rgb(20, 20, 20);
+  background-color: rgb(0, 255, 0);
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  float:left;
+  list-style: none;
+}
+ul ul {
+  display: none;
+  width:150px;
+}
+li a {
+  text-decoration: none;
+  color: rgb(0, 255, 0);
+  padding: 4px 0 4px;
+  display: block;
+  width: 150px;
+  font-size: 2vw;
+}
+li a:hover {
+  background-color: rgb(0, 255, 0);
+  color: rgb(20, 20, 20);
+}
+ul {
+  padding: 0;
+  margin:0px;
+  text-align: center;
+}
+ul.niveau1 li.sousmenu:hover ul.niveau2 {
+  display: block;
+}
+
+@keyframes cursor {
+  0%,
+  100% {
+    border-left: none;
+  }
+  50% {
+    border-left: solid 5px rgb(0, 255, 0);
+  }
+}
