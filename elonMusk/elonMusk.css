@@ -63,7 +63,7 @@
     border-top: solid 0.1vh rgb(0, 255, 0);
 }
 #firstPart {
-    margin-top: 13%;
+    height: 1px;
 }
 
 @keyframes slide {
