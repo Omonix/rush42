@@ -7,8 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
     "- Ingenieur",
     "- Investisseur",
     "- Fondateur (Neuralink, Zip2 Corporation, OpenAI, The Boring Company, Space X)",
-    "- Programmeur",
+    "- Developpe un logiciel de paiment securise",
     "- President (SolarCity, X)",
+    "- Chercheur",
+    "- Doctorat en physique energitique",
+    "- Sait diriger une equipe",
+    "- Visionnaire",
   ];
   let contact = ["X", "Facebook", "Instagram"];
 

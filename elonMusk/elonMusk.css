@@ -21,6 +21,9 @@
     width: 100%;
 }
 .containWorking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 2%;
 }
 .working {
@@ -58,6 +61,9 @@
     height: 1vh;
     margin-top: 2.5vh;
     border-top: solid 0.1vh rgb(0, 255, 0);
+}
+#firstPart {
+    margin-top: 13%;
 }
 
 @keyframes slide {
