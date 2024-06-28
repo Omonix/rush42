@@ -15,15 +15,7 @@ body {
   font-family: "Ubuntu";
 }
 
-.ft_logo {
-  font-size: 1vw;
-  animation: shine 1s infinite ease;
-}
-.by {
-  text-align: right;
-  margin: 1%;
-  font-size: 100%;
-}
+
 .header {
   display: flex;
   border-bottom: solid 0.25vh rgb(0, 255, 0);
@@ -34,17 +26,30 @@ body {
   top: 0;
   z-index: 1;
 }
+.ft_logo {
+  font-size: 1vw;
+  animation: shine 1s infinite ease;
+}
 .main {
   margin: 13% 0 0 2%;
-}
-.footer {
-  border-top: solid 0.25vh rgb(0, 255, 0);
-  height: 20vh;
 }
 .outputText {
   display: flex;
   align-items: center;
   font-size: 1.7vw;
+}
+.elonLogo,
+.billLogo {
+  animation: shine 1s infinite ease;
+}
+.footer {
+  border-top: solid 0.25vh rgb(0, 255, 0);
+  height: 20vh;
+}
+.by {
+  text-align: right;
+  margin: 1%;
+  font-size: 100%;
 }
 
 @keyframes shine {

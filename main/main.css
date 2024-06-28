@@ -6,7 +6,7 @@ p {
   letter-spacing: 0.075em;
 }
 .main {
-  height: 50vh;
+  height: 25vw;
 }
 .linkCV {
   display: flex;
@@ -27,14 +27,14 @@ p {
 .billLogo:hover {
   scale: 1.05;
 }
-.cursorer {
-  border-left: solid 5px rgb(0, 255, 0);
-  animation: cursor 1s infinite linear;
-}
 .textSpawn {
   padding-right: 0.2%;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.cursorer {
+  border-left: solid 5px rgb(0, 255, 0);
+  animation: cursor 1s infinite linear;
 }
 
 @keyframes cursor {

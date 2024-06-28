@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     #######   ##           ##       ## ##   ##   ##  ##  ##    ## #    ##         ##
         ##   ##  ##        ##       ##  ##  ##   ##  ##  ##    ##   #   ##  ##    ##
         ##   ######        ####     #### ##  #####    ####    #######    ####    ####`;
+
   const ft_typewriter = (e, word, count) => {
     let i = 0;
     let timer = setInterval(() => {
@@ -18,5 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }, count);
   };
+
   ft_typewriter(document.querySelector(".ft_logo"), logoFT, 3);
 });

@@ -6,48 +6,21 @@ a {
     text-decoration: none;
     color: rgb(0, 255, 0);
 }
-.elonFace {
-    width: 25%;
-    margin-right: 2%;
+#firstPart {
+    height: 1px;
 }
-.elonName {
-    font-size: 2.25vw;
-    animation: slideRight 4.9s infinite ease-in-out;
+#secondPart {
+    margin-bottom: 2.99vh;
 }
-.elonJob {
-    font-size: 1.9vw;
-    animation: slideRight 4.6s infinite ease-in-out;
-}
-.elonDescript {
-    font-size: 1.55vw;
-}
-.firstPart {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.firstElon {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.containWorking {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2%;
-}
-.working {
-    margin-left: 2%;
-    margin-bottom: 1%;
-    font-size: 1.5vw;
-    width: 100%;
+#thirdPart {
+    margin-bottom: 3vh;
 }
 .nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    animation: goFromRight 3s 1 ease-in-out;
 }
 .toNav a {
   border-radius: 4px;
@@ -66,22 +39,45 @@ a {
     border-left: solid 0.1vh rgb(0, 255, 0);
     height: 100%;
 }
-.contactNav {
+.regulNav {
     margin-right: 4vw;
+}
+.elonFace {
+    width: 25%;
+    margin-right: 2%;
+}
+.elonName {
+    font-size: 2.25vw;
+    animation: slideRight 4.9s infinite ease-in-out;
+}
+.elonJob {
+    font-size: 1.9vw;
+    animation: slideRight 4.6s infinite ease-in-out;
+}
+.elonDescript {
+    font-size: 1.55vw;
+}
+.itElon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.containWorking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.working {
+    margin-left: 2%;
+    margin-bottom: 1%;
+    font-size: 1.5vw;
+    width: 100%;
 }
 .transisPart {
     height: 3.5vh;
     margin-top: 4vh;
     border-top: solid 0.1vh rgb(0, 255, 0);
-}
-#firstPart {
-    height: 1px;
-}
-#secondPart {
-    margin-bottom: 2.99vh;
-}
-#thirdPart {
-    margin-bottom: 3vh;
 }
 .containContact {
     display: flex;
@@ -124,5 +120,13 @@ a {
     }
     50% {
         margin-left: 2vw;
+    }
+}
+@keyframes goFromRight {
+    0% {
+        margin-left: 50vw;
+    }
+    100% {
+        margin-left: 0vw;
     }
 }

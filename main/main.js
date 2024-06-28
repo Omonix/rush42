@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
    |    |   \\  |  |_|  |__ \\    \\_\\  \\/ __ \\|  | \\  ___/ \\___ \\ 
    |______  /__|____/____/  \\______  (____  /__|  \\___  >____  >
           \\/                       \\/     \\/          \\/     \\/ `;
+
   const ft_typewriter = (e, word, count) => {
     let i = 0;
     let timer = setInterval(() => {
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }, count);
   };
+
   setInterval(() => {
     let sentence = tabSentence[Math.floor(Math.random() * tabSentence.length)];
     ft_typewriter(textAnim, sentence, 75);

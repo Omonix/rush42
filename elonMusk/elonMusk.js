@@ -3,7 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
   let iconInsta = document.querySelectorAll(".iconContact")[0];
   let iconFacebook = document.querySelectorAll(".iconContact")[1];
   let iconX = document.querySelectorAll(".iconContact")[2];
-  let tabTitle = ["Elon Musk", "The G.O.A.T.", "Space X", "Gros cerveau"];
+  let tabTitle = [
+    "CV d'Elon Musk",
+    "The G.O.A.T. 🐐",
+    "Space 🇽",
+    "Gros cerveau 🧠",
+    "This is Elon Musk",
+    "200 milliards 💰",
+  ];
   let name = "Elon Reeve Musk";
   let job = "Milliardaire Americain";
   let descript =
@@ -57,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.style.width = e.offsetWidth + 5 + "px";
     }
   };
+
   iconInsta.addEventListener("click", () => {
     ft_countClicker(iconInsta, "https://www.instagram.com/elonmxsk/");
   });
@@ -76,17 +84,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 5000);
   setTimeout(() => {
     ft_typewriter(document.querySelector(".elonName"), name, 35);
-  }, 3500); //5000
+  }, 3500);
   setTimeout(() => {
     ft_typewriter(document.querySelector(".elonJob"), job, 35);
-  }, 4650); //6000
+  }, 4650);
   setTimeout(() => {
     ft_typewriter(document.querySelector(".elonDescript"), descript, 25);
-  }, 5650); //7000
+  }, 5650);
   setTimeout(() => {
     ft_ul(document.querySelectorAll(".working"), worker);
-  }, 9750); //9000
+  }, 9750);
   setTimeout(() => {
     ft_typewriter(document.querySelector(".more"), more, 25);
-  }, 11000); //10000
+  }, 11000);
 });
