@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+  let clickCount = 0;
+  let iconInsta = document.querySelectorAll(".iconContact")[0];
+  let iconFacebook = document.querySelectorAll(".iconContact")[1];
+  let iconX = document.querySelectorAll(".iconContact")[2];
   let tabTitle = ["Elon Musk", "The G.O.A.T.", "Space X", "Gros cerveau"];
   let name = "Elon Reeve Musk";
   let job = "Milliardaire Americain";
@@ -35,6 +39,36 @@ document.addEventListener("DOMContentLoaded", () => {
       ft_typewriter(e[i], tab[i], 75);
     }
   };
+  const ft_countClicker = (e, link) => {
+    if (clickCount === 4) {
+      window.open(link);
+      e.style.width = 10 + "vw";
+      e.style.height = 10 + "vw";
+      clickCount = 0;
+      e.style.cursor = "not-allowed";
+    } else if (clickCount === 3) {
+      e.style.cursor = "pointer";
+      clickCount++;
+      e.style.height = e.offsetWidth + 10 + "px";
+      e.style.width = e.offsetWidth + 10 + "px";
+    } else {
+      clickCount++;
+      e.style.height = e.offsetWidth + 5 + "px";
+      e.style.width = e.offsetWidth + 5 + "px";
+    }
+  };
+  iconInsta.addEventListener("click", () => {
+    ft_countClicker(iconInsta, "https://www.instagram.com/elonmxsk/");
+  });
+  iconFacebook.addEventListener("click", () => {
+    ft_countClicker(iconFacebook, "https://www.facebook.com/groups/elonmusk1/");
+  });
+  iconX.addEventListener("click", () => {
+    ft_countClicker(
+      iconX,
+      "https://x.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+    );
+  });
 
   setInterval(() => {
     document.querySelector("title").innerHTML =

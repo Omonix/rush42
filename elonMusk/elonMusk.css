@@ -89,7 +89,7 @@ img {
 .iconContact {
     width: 10vw;
     border-radius: 50%;
-    animation: iconMove 7.5s infinite ease;
+    cursor: not-allowed;
 }
 .iconContact:hover {
     opacity: 50%;
@@ -122,14 +122,5 @@ img {
     }
     50% {
         margin-left: 2vw;
-    }
-}
-@keyframes iconMove {
-    0%,
-    100% {
-        scale: 1;
-    }
-    50% {
-        scale: 1.25;
     }
 }
