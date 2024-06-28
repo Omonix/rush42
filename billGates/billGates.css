@@ -38,6 +38,9 @@
     border-left: solid 0.1vh rgb(0, 255, 0);
     height: 100%;
 }
+.regulNav {
+    margin-right: 4vw;
+}
 
 @keyframes navButton {
     0%,
