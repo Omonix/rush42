@@ -2,6 +2,10 @@ img {
     filter: grayscale(80%);
     z-index: -1;
 }
+a {
+    text-decoration: none;
+    color: rgb(0, 255, 0);
+}
 .elonFace {
     width: 25%;
     margin-right: 2%;
@@ -46,12 +50,10 @@ img {
     width: 100%;
 }
 .toNav a {
-  text-decoration: none;
-  color: rgb(0, 255, 0);
   border-radius: 4px;
   padding: 4px 0 4px;
   display: block;
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   padding: 1vw;
   animation: navButton 2s infinite ease-in-out;
 }
@@ -64,8 +66,8 @@ img {
     border-left: solid 0.1vh rgb(0, 255, 0);
     height: 100%;
 }
-.contact {
-    margin-right: 2.5vw;
+.contactNav {
+    margin-right: 4vw;
 }
 .transisPart {
     height: 3.5vh;
