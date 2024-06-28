@@ -14,9 +14,7 @@ body {
   background-color: rgb(20, 20, 20);
   font-family: "Ubuntu";
 }
-p {
-  letter-spacing: 0.075em;
-}
+
 .ft_logo {
   font-size: 1vw;
 }
@@ -33,6 +31,7 @@ p {
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 1;
 }
 .main {
   margin: 13% 0 0 2%;

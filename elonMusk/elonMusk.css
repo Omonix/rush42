@@ -1,14 +1,20 @@
+img {
+    filter: grayscale(80%);
+    z-index: -1;
+}
 .elonFace {
     width: 25%;
     margin-right: 2%;
-    filter: grayscale(80%);
-    z-index: -1;
 }
 .elonName {
     font-size: 2.25vw;
 }
 .elonJob {
-    font-size: 1.95vw;
+    font-size: 1.9vw;
+}
+.more,
+.elonDescript {
+    font-size: 1.55vw;
 }
 .firstPart {
     display: flex;
@@ -30,6 +36,7 @@
     margin-left: 2%;
     margin-bottom: 1%;
     font-size: 1.5vw;
+    width: 100%;
 }
 .nav {
     display: flex;
@@ -64,6 +71,18 @@
 }
 #firstPart {
     height: 1px;
+}
+#secondPart {
+    margin-bottom: 3%;
+}
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.iconContact {
+    width: 25%;
+    border-radius: 50%;
 }
 
 @keyframes slide {

@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let tabTitle = ["Elon Musk", "The G.O.A.T.", "Space X", "Gros cerveau"];
   let name = "Elon Reeve Musk";
   let job = "Milliardaire Americain";
+  let descript =
+    "Elon Musk, né en 1971 à Pretoria en Afrique du Sud, est un entrepreneur et un innovateur, connu pour son ambition de révolutionner plusieurs industries clés.";
   let worker = [
     "- Entrepreneur",
     "- Ingenieur",
@@ -14,7 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "- Sait diriger une equipe",
     "- Visionnaire",
   ];
-  let contact = ["X", "Facebook", "Instagram"];
+  let more =
+    "il s'est fait un nom en co-fondant et développant des entreprises de premier plan dans divers secteurs, notamment PayPal dans le domaine des paiements en ligne, SpaceX dans l'aérospatiale, Tesla dans les véhicules électriques, et Neuralink dans les interfaces cerveau-machine.";
 
   const ft_typewriter = (e, word, count) => {
     let i = 0;
@@ -33,17 +36,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  setTimeout(() => {
-    ft_typewriter(document.querySelector(".elonName"), name, 25);
-  }, 5000);
-  setTimeout(() => {
-    ft_typewriter(document.querySelector(".elonJob"), job, 25);
-  }, 6000);
-  setTimeout(() => {
-    ft_ul(document.querySelectorAll(".working"), worker);
-  }, 7000);
   setInterval(() => {
     document.querySelector("title").innerHTML =
       tabTitle[Math.floor(Math.random() * tabTitle.length)];
   }, 5000);
+  setTimeout(() => {
+    ft_typewriter(document.querySelector(".elonName"), name, 35);
+  }, 1); //5000
+  setTimeout(() => {
+    ft_typewriter(document.querySelector(".elonJob"), job, 35);
+  }, 1); //6000
+  setTimeout(() => {
+    ft_typewriter(document.querySelector(".elonDescript"), descript, 20);
+  }, 1); //7000
+  setTimeout(() => {
+    ft_ul(document.querySelectorAll(".working"), worker);
+  }, 1); //9000
+  setTimeout(() => {
+    ft_typewriter(document.querySelector(".more"), more, 35);
+  }, 1); //10000
 });
