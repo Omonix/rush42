@@ -8,9 +8,11 @@ img {
 }
 .elonName {
     font-size: 2.25vw;
+    animation: slideRight 4.9s infinite ease-in-out;
 }
 .elonJob {
     font-size: 1.9vw;
+    animation: slideRight 4.6s infinite ease-in-out;
 }
 .elonDescript {
     font-size: 1.55vw;
@@ -50,7 +52,7 @@ img {
   display: block;
   font-size: 1.8vw;
   padding: 1vw;
-  animation: slide 2s infinite ease-in-out;
+  animation: slideUp 2s infinite ease-in-out;
 }
 .toNav a:hover {
     color: rgb(20, 20, 20);
@@ -64,35 +66,64 @@ img {
     margin-right: 2.5vw;
 }
 .transisPart {
-    height: 1vh;
-    margin-top: 2.5vh;
+    height: 3.5vh;
+    margin-top: 4vh;
     border-top: solid 0.1vh rgb(0, 255, 0);
 }
 #firstPart {
     height: 1px;
 }
 #secondPart {
-    margin-bottom: 3%;
+    margin-bottom: 2.99vh;
 }
 .containContact {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 3.5vh;
 }
 .iconContact {
     width: 10vw;
     border-radius: 50%;
+    animation: iconMove 10s infinite ease;
+}
+.iconContact:hover {
+    opacity: 50%;
 }
 .more {
     font-size: 1.55vw;
 }
 
-@keyframes slide {
+@keyframes slideUp {
     0%,
     100% {
         margin-bottom: 0;
     }
     50% {
         margin-bottom: 2vh;
+    }
+}
+@keyframes slideRight {
+    0%,
+    100% {
+        margin-left: 0vw;
+    }
+    50% {
+        margin-left: 2vw;
+    }
+}
+@keyframes iconMove {
+    0%,
+    100% {
+        margin: 0vw;
+    }
+    25% {
+        margin: 0 0 0 10vw;
+    }
+    50% {
+        margin: 5vw 0 0 10vw;
+    }
+    75% {
+        margin: 5vw 0 0 0;
     }
 }
