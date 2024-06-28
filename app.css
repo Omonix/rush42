@@ -17,6 +17,7 @@ body {
 
 .ft_logo {
   font-size: 1vw;
+  animation: shine 1s infinite ease;
 }
 .by {
   text-align: right;
@@ -38,9 +39,20 @@ body {
 }
 .footer {
   border-top: solid 0.25vh rgb(0, 255, 0);
+  height: 20vh;
 }
 .outputText {
   display: flex;
   align-items: center;
   font-size: 1.7vw;
+}
+
+@keyframes shine {
+  0%,
+  100% {
+    color: rgb(0, 255, 0);
+  }
+  50% {
+    color: rgb(167, 255, 167);
+  }
 }
