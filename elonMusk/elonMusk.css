@@ -76,11 +76,13 @@ img {
 #secondPart {
     margin-bottom: 2.99vh;
 }
+#thirdPart {
+    margin-bottom: 30vh;
+}
 .containContact {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 3.5vh;
 }
 .iconContact {
     width: 10vw;
