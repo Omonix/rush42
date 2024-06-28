@@ -5,19 +5,19 @@ document.addEventListener("DOMContentLoaded", () => {
   let descript =
     "Elon Musk, né en 1971 à Pretoria en Afrique du Sud, est un entrepreneur et un innovateur, connu pour son ambition de révolutionner plusieurs industries clés.";
   let worker = [
-    "- Entrepreneur",
-    "- Ingenieur",
-    "- Investisseur",
-    "- Fondateur (Neuralink, Zip2 Corporation, OpenAI, The Boring Company, Space X)",
-    "- Developpe un logiciel de paiment securise",
-    "- President (SolarCity, X)",
-    "- Chercheur",
-    "- Doctorat en physique energitique",
-    "- Sait diriger une equipe",
-    "- Visionnaire",
+    "- Entrepreneur 📈",
+    "- Ingenieur 🔧",
+    "- Investisseur 💸",
+    "- Fondateur (Neuralink, Zip2 Corporation, OpenAI, The Boring Company, Space X) 👔",
+    "- Developpe un logiciel de paiment securise 💻",
+    "- President (SolarCity, X) 👨‍💼",
+    "- Chercheur 👨🏼‍🔬",
+    "- Doctorat en physique energitique 🎓",
+    "- Sait diriger une equipe 🖇",
+    "- Visionnaire 👁️",
   ];
   let more =
-    "il s'est fait un nom en co-fondant et développant des entreprises de premier plan dans divers secteurs, notamment PayPal dans le domaine des paiements en ligne, SpaceX dans l'aérospatiale, Tesla dans les véhicules électriques, et Neuralink dans les interfaces cerveau-machine.";
+    "Il s'est fait un nom en co-fondant et développant des entreprises de premier plan dans divers secteurs, notamment PayPal dans le domaine des paiements en ligne, SpaceX dans l'aérospatiale, Tesla dans les véhicules électriques, et Neuralink dans les interfaces cerveau-machine.";
 
   const ft_typewriter = (e, word, count) => {
     let i = 0;
@@ -42,17 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 5000);
   setTimeout(() => {
     ft_typewriter(document.querySelector(".elonName"), name, 35);
-  }, 1); //5000
+  }, 3500); //5000
   setTimeout(() => {
     ft_typewriter(document.querySelector(".elonJob"), job, 35);
-  }, 1); //6000
+  }, 4650); //6000
   setTimeout(() => {
-    ft_typewriter(document.querySelector(".elonDescript"), descript, 20);
-  }, 1); //7000
+    ft_typewriter(document.querySelector(".elonDescript"), descript, 25);
+  }, 5650); //7000
   setTimeout(() => {
     ft_ul(document.querySelectorAll(".working"), worker);
-  }, 1); //9000
+  }, 9750); //9000
   setTimeout(() => {
-    ft_typewriter(document.querySelector(".more"), more, 35);
-  }, 1); //10000
+    ft_typewriter(document.querySelector(".more"), more, 25);
+  }, 11000); //10000
 });
